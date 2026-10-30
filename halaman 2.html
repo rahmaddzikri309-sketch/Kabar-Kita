@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karhutla Kalimantan Kembali Memanas — KABAR KITA</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        editorial: {
+                            paper: '#FBF9F5',
+                            dark: '#121212',
+                            accent: '#8B0000',
+                            muted: '#767676',
+                            border: '#E2DFD8',
+                            card: '#F4F1EA'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        article: ['"Newsreader"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FBF9F5;
+            color: #121212;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .drop-cap::first-letter {
+            font-family: 'Playfair Display', serif;
+            float: left;
+            font-size: 3.6rem;
+            line-height: 0.8;
+            padding-top: 4px;
+            padding-right: 12px;
+            padding-bottom: 0px;
+            color: #8B0000;
+            font-weight: 700;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FBF9F5; }
+        ::-webkit-scrollbar-thumb { background: #121212; }
+    </style>
+</head>
+<body class="selection:bg-editorial-accent selection:text-white min-h-screen flex flex-col justify-between">
+
+    <header class="w-full bg-editorial-paper sticky top-0 z-50 border-b border-editorial-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-2.5 border-b border-editorial-border text-xs flex justify-between items-center font-sans tracking-wider uppercase text-editorial-muted">
+                <a href="halaman1.html" class="inline-flex items-center gap-2 font-bold text-editorial-dark hover:text-editorial-accent transition-colors">
+                    &larr; Kembali ke Beranda
+                </a>
+                <span class="font-mono text-editorial-accent font-bold">LIPUTAN KHUSUS INVESTIGASI</span>
+            </div>
+            <div class="py-5 text-center">
+                <a href="halaman1.html" class="group inline-block">
+                    <h1 class="font-serif text-3xl sm:text-5xl font-black tracking-tight text-editorial-dark uppercase">
+                        KABAR KITA
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+        
+        <!-- Breadcrumb -->
+        <div class="flex items-center gap-2 text-xs font-mono text-editorial-muted">
+            <a href="halaman1.html" class="hover:underline">Beranda</a>
+            <span>/</span>
+            <span>Nasional</span>
+            <span>/</span>
+            <span class="text-editorial-dark font-bold">Liputan Khusus</span>
+        </div>
+
+        <!-- Article Title & Metadata -->
+        <header class="max-w-4xl mx-auto space-y-6 text-center border-b border-editorial-border pb-8">
+            <div class="flex justify-center items-center gap-3">
+                <span class="bg-editorial-accent text-white text-xs px-3 py-1 font-bold uppercase tracking-wider">Investigasi Khusus</span>
+                <span class="text-xs font-mono text-editorial-muted">13 Oktober 2026 • 18 Menit Baca</span>
+            </div>
+            
+            <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-black leading-tight text-editorial-dark">
+                Karhutla Kalimantan Kembali Memanas: Asap Tebal Ancam Kesehatan Warga & Bayang-Bayang Alih Fungsi Lahan Sawit
+            </h1>
+            
+            <p class="font-article text-xl sm:text-2xl text-editorial-muted italic max-w-3xl mx-auto leading-relaxed">
+                Di tengah musim kemarau panjang, titik-titik api kembali membakar paru-paru dunia di Kalimantan. Tim investigasi kami menelusuri jejak di balik kepulan asap tebal yang menyelimuti permukiman warga.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-6 pt-4 border-t border-editorial-border text-xs font-sans">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-editorial-dark text-white flex items-center justify-center font-bold font-serif text-lg">
+                        KK
+                    </div>
+                    <div class="text-left">
+                        <div class="font-bold uppercase text-editorial-dark">Tim Investigasi Kabar Kita</div>
+                        <div class="text-editorial-muted">Liputan Khusus Palangka Raya & Jakarta</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-editorial-muted font-mono border-l pl-6 border-editorial-border">
+                    <span>Dibagikan: 1.4k</span>
+                    <span>•</span>
+                    <span>Komentar: 48</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="max-w-4xl mx-auto space-y-2">
+            <div class="aspect-[16/9] border border-editorial-dark overflow-hidden relative shadow-lg">
+                <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1400&q=80" alt="Kebakaran Hutan dan Lahan Kalimantan" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center text-xs font-mono text-editorial-muted px-1">
+                <span>Helikopter water bombing beroperasi memadamkan api di lahan gambut kering Kalimantan.</span>
+                <span>Dok. Manggala Agni / Kabar Kita</span>
+            </div>
+        </div>
+
+        <!-- Article Body -->
+        <article class="max-w-3xl mx-auto font-article text-lg sm:text-xl text-editorial-dark leading-relaxed space-y-8 pt-4">
+            
+            <p class="drop-cap">
+                arbon monoksida dan partikulat halus kini menjadi menu harian warga di sejumlah kabupaten di Kalimantan Tengah dan Kalimantan Selatan. Jarak pandang menyusut drastis di pagi hari, memaksa sekolah-sekolah menerapkan pembelajaran jarak jauh demi melindungi kesehatan pernapasan anak-anak. Namun di balik bencana kabut asap yang berulang setiap tahun ini, tersimpan pertanyaan mendasar: siapa yang diuntungkan dari hangusnya ribuan hektare lahan gambut?
+            </p>
+
+            <p>
+                Berdasarkan citra satelit dan pemantauan posko darurat, lonjakan titik panas (hotspot) menunjukkan pola yang sistematis. Sebagian besar kebakaran tidak terjadi secara alami akibat petir atau gesekan ranting, melainkan terkonsentrasi di area konsesi dan perbatasan lahan yang sedang dalam proses sengketa perizinan.
+            </p>
+
+            <figure class="my-10 p-6 sm:p-8 border-y-2 border-editorial-dark bg-editorial-card text-center">
+                <blockquote class="font-serif text-2xl sm:text-3xl font-bold italic text-editorial-accent mb-3">
+                    "Pola pembakaran di lahan gambut sangat terstruktur. Modus lama ini terus berulang karena lemahnya sanksi korporasi."
+                </blockquote>
+                <figcaption class="text-xs font-mono font-bold uppercase tracking-widest text-editorial-muted">
+                    — Dr. H. Pratama, Pakar Ekologi Lingkungan Universitas Mulawarman
+                </figcaption>
+            </figure>
+
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold pt-4 text-editorial-dark">
+                Ancaman Nyata Kesehatan Warga dan Dilema Ekonomi Sawit
+            </h3>
+
+            <p>
+                Dinas Kesehatan Provinsi mencatat lonjakan pasien Infeksi Saluran Pernapasan Akut (ISPA) hingga 250% dalam kurun waktu tiga pekan terakhir. Puskesmas kewalahan menghadapi pasien anak-anak dan lansia yang mengalami sesak napas akut. Di saat yang sama, narasi ekonomi kerap dijadikan perisai oleh pihak-pihak tertentu yang ingin segera mengubah status lahan terbakar menjadi perkebunan sawit produktif.
+            </p>
+
+            <p>
+                "Ada dorongan sistemik untuk mengubah ekosistem gambut basah menjadi monokultur sawit. Ketika lahan terbakar dan kering, biaya pembersihan lahan (land clearing) menjadi jauh lebih murah bagi korporasi nakal," ungkap salah seorang aktivis lingkungan senior yang meminta identitasnya dirahasiakan demi keamanan.
+            </p>
+
+            <!-- Infographic Box -->
+            <div class="p-6 border border-editorial-dark bg-white space-y-4 my-8 font-sans">
+                <div class="flex justify-between items-center border-b border-editorial-border pb-3">
+                    <h4 class="font-bold text-sm uppercase tracking-wider">Statistik Hotspot & Penanganan Karhutla 2026</h4>
+                    <span class="text-xs font-mono text-editorial-accent font-bold">DATA RESMI BNPB</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div class="p-4 bg-editorial-paper border border-editorial-border">
+                        <div class="text-2xl font-serif font-black text-editorial-accent">1,420</div>
+                        <div class="text-xs text-editorial-muted mt-1 uppercase">Titik Hotspot Terdeteksi</div>
+                    </div>
+                    <div class="p-4 bg-editorial-paper border border-editorial-border">
+                        <div class="text-2xl font-serif font-black text-editorial-dark">45,800 Ha</div>
+                        <div class="text-xs text-editorial-muted mt-1 uppercase">Lahan Terbakar</div>
+                    </div>
+                    <div class="p-4 bg-editorial-paper border border-editorial-border">
+                        <div class="text-2xl font-serif font-black text-editorial-dark">82 Unit</div>
+                        <div class="text-xs text-editorial-muted mt-1 uppercase">Tim Pemadam Gabungan</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold pt-4 text-editorial-dark">
+                Langkah Tegas Penegakan Hukum yang Ditunggu Publik
+            </h3>
+
+            <p>
+                Kementerian Lingkungan Hidup dan Kehutanan bersama Kepolisian Republik Indonesia menyatakan telah menyegel sedikitnya belasan korporasi yang diduga lalai atau sengaja membiarkan lahan konsesinya terbakar. Namun publik menuntut transparansi lebih jauh hingga proses peradilan tipikor bagi para pemodal utama di balik layar.
+            </p>
+
+            <p>
+                Tanpa adanya sanksi pencabutan izin permanen dan pemulihan ekosistem gambut secara total, bencana tahunan ini dipastikan akan terus merenggut hak hidup sehat jutaan rakyat Indonesia.
+            </p>
+
+        </article>
+
+        <!-- Article Footer Controls -->
+        <div class="max-w-3xl mx-auto pt-8 border-t border-editorial-border flex flex-col sm:flex-row justify-between items-center gap-4 font-sans text-xs">
+            <div class="flex flex-wrap items-center gap-2">
+                <span class="font-bold uppercase text-editorial-muted">Topik Terkait:</span>
+                <span class="px-3 py-1 bg-editorial-card border border-editorial-border font-medium">Karhutla</span>
+                <span class="px-3 py-1 bg-editorial-card border border-editorial-border font-medium">Kalimantan</span>
+                <span class="px-3 py-1 bg-editorial-card border border-editorial-border font-medium">Lingkungan Hidup</span>
+                <span class="px-3 py-1 bg-editorial-card border border-editorial-border font-medium">Sawit</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <button onclick="showNotification('Tautan artikel berhasil disalin ke clipboard!')" class="px-4 py-2 border border-editorial-dark font-bold uppercase tracking-wider hover:bg-editorial-dark hover:text-white transition-colors">Bagikan Artikel</button>
+                <a href="halaman1.html" class="px-4 py-2 bg-editorial-accent text-white font-bold uppercase tracking-wider hover:bg-opacity-90 transition-colors">Kembali ke Beranda</a>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <section class="max-w-4xl mx-auto pt-12 border-t-2 border-editorial-dark mt-16">
+            <h3 class="font-serif text-2xl font-bold mb-6 uppercase tracking-tight">Baca Juga Liputan Lainnya</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <a href="article.html" class="p-4 border border-editorial-border bg-editorial-card block group">
+                    <span class="text-[10px] font-bold uppercase text-editorial-accent">Hukum & Korupsi</span>
+                    <h4 class="font-serif font-bold text-lg mt-1 group-hover:text-editorial-accent transition-colors">Skandal Korupsi Timah Rp300 Triliun: Bukti Nyata Kegagalan Sistem</h4>
+                    <p class="text-xs text-editorial-muted mt-2 font-sans line-clamp-2">Analisis mendalam mengenai aliran dana korupsi timah yang menyeret sejumlah nama besar.</p>
+                </a>
+                <a href="article.html" class="p-4 border border-editorial-border bg-editorial-card block group">
+                    <span class="text-[10px] font-bold uppercase text-editorial-accent">Sosial & Pendidikan</span>
+                    <h4 class="font-serif font-bold text-lg mt-1 group-hover:text-editorial-accent transition-colors">Keracunan Program MBG Membeludak, JPPI Minta Program Dihentikan</h4>
+                    <p class="text-xs text-editorial-muted mt-2 font-sans line-clamp-2">Evaluasi menyeluruh program makan bergizi gratis yang memicu polemik di berbagai sekolah.</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="notification-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-editorial-dark text-editorial-paper px-6 py-3 border border-gray-700 shadow-2xl flex items-center gap-3 text-xs font-mono">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <span id="notification-text">Pemberitahuan sistem...</span>
+    </div>
+
+    <footer class="w-full bg-editorial-dark text-editorial-paper mt-16 border-t-2 border-editorial-dark pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-gray-800">
+                <div class="space-y-4 md:col-span-1">
+                    <h2 class="font-serif text-2xl font-black uppercase tracking-tight text-white">KABAR KITA</h2>
+                    <p class="text-xs text-gray-400 font-sans leading-relaxed">
+                        Portal berita independen berstandar jurnalisme investigasi tinggi. Menyajikan fakta secara tajam, berimbang, dan berkarakter tanpa kompromi.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-editorial-accent mb-4">Rubrik Utama</h4>
+                    <ul class="space-y-2 text-xs text-gray-300 font-sans">
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Nasional & Politik</a></li>
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Investigasi Khusus</a></li>
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Hukum & Korupsi</a></li>
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Ekonomi & Keuangan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-editorial-accent mb-4">Redaksi & Kolom</h4>
+                    <ul class="space-y-2 text-xs text-gray-300 font-sans">
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Opini Tokoh</a></li>
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Lingkungan & Sains</a></li>
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Pendidikan & Sosial</a></li>
+                        <li><a href="halaman1.html" class="hover:text-white transition-colors">Indeks Arsip Berita</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-editorial-accent mb-4">Kantor Redaksi</h4>
+                    <p class="text-xs text-gray-400 font-sans leading-relaxed">
+                        Gedung Pers Kabar Kita, Jl. Jend. Sudirman No. 45, Jakarta Pusat 10220.<br>
+                        Email: redaksi@kabarkita.id<br>
+                        Telp: (021) 555-0192
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 font-mono gap-4">
+                <span>© 2026 PT Kabar Kita Media Indonesia. Hak Cipta Dilindungi Undang-Undang.</span>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Pedoman Media Siber</a>
+                    <a href="#" class="hover:text-white transition-colors">Kode Etik Jurnalistik</a>
+                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showNotification(message) {
+            const toast = document.getElementById('notification-toast');
+            const textEl = document.getElementById('notification-text');
+            textEl.textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>

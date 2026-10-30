@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KABAR KITA — Beranda Utama & Jurnalisme Investigasi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        editorial: {
+                            paper: '#FBF9F5',
+                            dark: '#121212',
+                            accent: '#8B0000',
+                            muted: '#767676',
+                            border: '#E2DFD8',
+                            card: '#F4F1EA'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        article: ['"Newsreader"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FBF9F5;
+            color: #121212;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FBF9F5; }
+        ::-webkit-scrollbar-thumb { background: #121212; }
+    </style>
+</head>
+<body class="selection:bg-editorial-accent selection:text-white min-h-screen flex flex-col justify-between">
+
+    <header class="w-full bg-editorial-paper sticky top-0 z-50 border-b border-editorial-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-2 border-b border-editorial-border text-xs flex flex-col sm:flex-row justify-between items-center gap-2 font-sans tracking-wider uppercase text-editorial-muted">
+                <div class="flex items-center gap-4">
+                    <span id="current-date" class="font-semibold text-editorial-dark">Selasa, 13 Oktober 2026</span>
+                    <span class="hidden md:inline">•</span>
+                    <span class="hidden md:inline">EDISI NASIONAL NO. 412/IV</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="flex items-center gap-1.5 font-medium text-editorial-dark">
+                        <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        Medan 31°C, Hujan Ringan
+                    </span>
+                    <span>•</span>
+                    <span class="text-editorial-accent font-bold">UTAMA</span>
+                </div>
+            </div>
+
+            <div class="py-6 sm:py-8 text-center relative flex flex-col items-center justify-center">
+                <div class="absolute left-4 top-1/2 -translate-y-1/2 hidden lg:flex flex-col text-left text-xs font-mono text-editorial-muted">
+                    <span>INDEPENDEN</span>
+                    <span>TAJAM & KRITIS</span>
+                    <span>VERIFIKASI KETAT</span>
+                </div>
+                <a href="home.html" class="group inline-block">
+                    <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-editorial-dark uppercase group-hover:opacity-90 transition-opacity">
+                        KABAR KITA
+                    </h1>
+                </a>
+                <p class="font-serif italic text-xs sm:text-sm text-editorial-muted mt-1 tracking-widest uppercase">
+                    Jurnal Investigasi, Analisis Kebijakan, dan Opini Publik
+                </p>
+            </div>
+
+            <nav class="py-2.5 border-t border-b border-editorial-dark flex justify-center items-center gap-4 sm:gap-8 text-xs sm:text-sm font-bold uppercase tracking-widest">
+                <a href="halaman1.html" class="text-editorial-accent hover:text-editorial-dark transition-colors">Beranda</a>
+                <a href="halaman1.html" class="hover:text-editorial-accent transition-colors">Nasional</a>
+                <a href="halaman1.html" class="hover:text-editorial-accent transition-colors">Investigasi</a>
+                <a href="halaman1.html" class="hover:text-editorial-accent transition-colors">Ekonomi</a>
+                <a href="halaman 2.html" class="hover:text-editorial-accent transition-colors">Lingkungan & Karhutla</a>
+                <a href="home.html" class="hover:text-editorial-accent transition-colors">Opini</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 border-b-2 border-editorial-dark">
+            <!-- Main Lead Article -->
+            <div class="lg:col-span-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-editorial-border pb-8 lg:pb-0 lg:pr-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="bg-editorial-accent text-white text-xs px-2.5 py-1 font-bold uppercase tracking-wider">Laporan Utama</span>
+                        <span class="text-xs font-mono text-editorial-muted">12 Oktober 2026 — 14 Min Baca</span>
+                    </div>
+                    <a href="halaman 2.html">
+                        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold leading-tight hover:text-editorial-accent transition-colors mb-4">
+                            Karhutla Kalimantan Kembali Memanas: Asap Tebal Ancam Kesehatan Warga, Hutan Berubah Jadi Sawit?
+                        </h2>
+                    </a>
+                    <p class="font-article text-lg text-editorial-muted leading-relaxed mb-6">
+                        Titik panas (hotspot) di kawasan hutan Kalimantan melonjak drastis dalam dua pekan terakhir. Tim gabungan berjibaku melakukan pemadaman darat dan udara, sementara indikasi alih fungsi lahan ilegal menjadi bayangan gelap di balik bencana ekologis berulang ini.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <a href="halaman 2.html" class="block relative overflow-hidden group aspect-[16/9] border border-editorial-dark">
+                        <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80" alt="Karhutla Kalimantan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white text-xs font-mono">
+                            Foto: Tim Manggala Agni memadamkan titik api di lahan gambut kering.
+                        </div>
+                    </a>
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-editorial-dark">Oleh: Redaksi Investigasi Kabar Kita</span>
+                        <a href="halaman 2.html" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-editorial-accent hover:underline">
+                            Baca Artikel Lengkap &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Briefs -->
+            <div class="lg:col-span-4 flex flex-col justify-between space-y-6">
+                <div>
+                    <h3 class="font-serif text-xl font-bold pb-2 border-b border-editorial-dark mb-4 flex items-center justify-between">
+                        <span>Fokus Isu Nasional</span>
+                        <span class="text-xs font-mono text-editorial-accent font-normal">UPDATE TERKINI</span>
+                    </h3>
+                    <div class="space-y-6">
+                        <article class="group pb-6 border-b border-editorial-border">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-editorial-card px-2 py-0.5 text-editorial-muted">Hukum & Korupsi</span>
+                            <a href="halaman 2.html">
+                                <h4 class="font-serif font-bold text-lg mt-2 group-hover:text-editorial-accent transition-colors leading-snug">
+                                    Skandal Korupsi Timah Rp300 Triliun: Ketika Sistem Pengawasan Negara Lumpuh Total
+                                </h4>
+                            </a>
+                            <p class="text-xs text-editorial-muted mt-2 line-clamp-2 font-sans">
+                                Ketimpangan penegakan hukum dan lemahnya audit tata niaga komoditas jadi akar kerugian negara fantastis.
+                            </p>
+                        </article>
+
+                        <article class="group pb-6 border-b border-editorial-border">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-editorial-card px-2 py-0.5 text-editorial-muted">Kebijakan Publik</span>
+                            <a href="halaman 2.html">
+                                <h4 class="font-serif font-bold text-lg mt-2 group-hover:text-editorial-accent transition-colors leading-snug">
+                                    Polemik Program Makan Bergizi Gratis: Evaluasi Darurat Usai Gelombang Kasus Keracunan
+                                </h4>
+                            </a>
+                            <p class="text-xs text-editorial-muted mt-2 line-clamp-2 font-sans">
+                                JPPI mendesak penghentian sementara setelah ratusan siswa dilarikan ke rumah sakit di berbagai daerah.
+                            </p>
+                        </article>
+
+                        <article class="group">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-editorial-card px-2 py-0.5 text-editorial-muted">Opini Tani</span>
+                            <a href="halaman 2.html">
+                                <h4 class="font-serif font-bold text-lg mt-2 group-hover:text-editorial-accent transition-colors leading-snug">
+                                    Hari Tani Nasional: Bukan Sekadar Seremonial di Tengah Alih Fungsi Lahan Pertanian
+                                </h4>
+                            </a>
+                            <p class="text-xs text-editorial-muted mt-2 line-clamp-2 font-sans">
+                                Masa depan ketahanan pangan nasional dipertaruhkan tatkala regenerasi petani kian menyusut.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="bg-editorial-card p-5 border border-editorial-border relative">
+                    <span class="absolute -top-3 left-4 bg-editorial-accent text-white text-[10px] font-bold px-2 py-0.5 uppercase">Kutipan Hari Ini</span>
+                    <blockquote class="font-serif italic text-sm text-editorial-dark mt-2">
+                        "Korupsi bukan sekadar angka di atas kertas, melainkan perampasan hak masa depan generasi anak bangsa."
+                    </blockquote>
+                    <div class="mt-3 text-[11px] font-mono font-bold uppercase text-editorial-muted">— Dewan Redaksi Kabar Kita</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="flex justify-between items-end border-b border-editorial-dark pb-3">
+                <h3 class="font-serif text-2xl font-bold uppercase tracking-tight">Kolom Berita & Analisis</h3>
+                <span class="text-xs font-mono uppercase text-editorial-muted">Arsip Edisi Minggu Ini</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4 pb-6 md:pb-0 md:border-r md:border-editorial-border md:pr-6">
+                    <div class="aspect-[16/10] bg-gray-200 overflow-hidden border border-editorial-dark">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80" alt="Ekonomi" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-editorial-accent">Ekonomi & Keuangan</span>
+                    <a href="halaman 2.html"><h4 class="font-serif text-xl font-bold leading-snug hover:text-editorial-accent transition-colors">Menkeu Soroti Anggaran Mengendap, Alokasi Dana Bansos Diperketat</h4></a>
+                    <p class="text-xs text-editorial-muted font-article leading-relaxed">Optimalisasi belanja negara menjadi kunci pemulihan ekonomi mikro di tengah tekanan inflasi global yang belum mereda sepenuhnya.</p>
+                    <div class="text-[11px] font-mono text-editorial-muted">Oleh: Rian Hidayat • 3 jam lalu</div>
+                </div>
+
+                <div class="space-y-4 pb-6 md:pb-0 md:border-r md:border-editorial-border md:pr-6">
+                    <div class="aspect-[16/10] bg-gray-200 overflow-hidden border border-editorial-dark">
+                        <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=600&q=80" alt="Hukum" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-editorial-accent">Hukum & Peradilan</span>
+                    <a href="halaman 2.html"><h4 class="font-serif text-xl font-bold leading-snug hover:text-editorial-accent transition-colors">Desakan KPK: Transparansi Anggaran Daerah Cegah Niat Korupsi Sejak Dini</h4></a>
+                    <p class="text-xs text-editorial-muted font-article leading-relaxed">Penerapan e-planning dan e-budgeting yang terintegrasi terbukti mampu mempersempit ruang gerak oknum pejabat korup di tingkat daerah.</p>
+                    <div class="text-[11px] font-mono text-editorial-muted">Oleh: Siska Dewi • 5 jam lalu</div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="aspect-[16/10] bg-gray-200 overflow-hidden border border-editorial-dark">
+                        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=600&q=80" alt="Pendidikan" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-editorial-accent">Sosial & Budaya</span>
+                    <a href="halaman 2.html"><h4 class="font-serif text-xl font-bold leading-snug hover:text-editorial-accent transition-colors">Krisis Ruang Publik Hijau di Kota Metropolitan: Menagih Janji Pemerintah</h4></a>
+                    <p class="text-xs text-editorial-muted font-article leading-relaxed">Alih fungsi ruang terbuka hijau menjadi kawasan komersial kian memperburuk kualitas udara perkotaan serta memicu polusi akut.</p>
+                    <div class="text-[11px] font-mono text-editorial-muted">Oleh: Dimas Prakoso • 7 jam lalu</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-editorial-dark text-editorial-paper p-8 sm:p-12 border border-editorial-dark flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="space-y-2 max-w-xl">
+                <span class="text-xs font-mono uppercase tracking-widest text-editorial-accent bg-white px-2 py-0.5">Langganan Eksklusif</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold">Dapatkan Buletin Investigasi Mingguan Langsung di Kotak Masuk Anda</h3>
+                <p class="text-xs sm:text-sm text-gray-400 font-sans">Jurnalisme mendalam tanpa sensor, dikurasi khusus setiap Jumat pagi.</p>
+            </div>
+            <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" placeholder="Alamat email Anda..." class="px-4 py-3 bg-transparent border border-gray-600 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white min-w-[260px]">
+                <button onclick="showNotification('Terima kasih telah berlangganan buletin kami!')" class="px-6 py-3 bg-editorial-accent text-white font-bold text-xs uppercase tracking-widest hover:bg-opacity-90 transition-colors whitespace-nowrap">Daftar Sekarang</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-editorial-dark text-editorial-paper px-6 py-3 border border-gray-700 shadow-2xl flex items-center gap-3 text-xs font-mono">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <span id="notification-text">Pemberitahuan sistem...</span>
+    </div>
+
+    <footer class="w-full bg-editorial-dark text-editorial-paper mt-16 border-t-2 border-editorial-dark pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-gray-800">
+                <div class="space-y-4 md:col-span-1">
+                    <h2 class="font-serif text-2xl font-black uppercase tracking-tight text-white">KABAR KITA</h2>
+                    <p class="text-xs text-gray-400 font-sans leading-relaxed">
+                        Portal berita independen berstandar jurnalisme investigasi tinggi. Menyajikan fakta secara tajam, berimbang, dan berkarakter tanpa kompromi.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-editorial-accent mb-4">Rubrik Utama</h4>
+                    <ul class="space-y-2 text-xs text-gray-300 font-sans">
+                        <li><a href="home.html" class="hover:text-white transition-colors">Nasional & Politik</a></li>
+                        <li><a href="home.html" class="hover:text-white transition-colors">Investigasi Khusus</a></li>
+                        <li><a href="home.html" class="hover:text-white transition-colors">Hukum & Korupsi</a></li>
+                        <li><a href="home.html" class="hover:text-white transition-colors">Ekonomi & Keuangan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-editorial-accent mb-4">Redaksi & Kolom</h4>
+                    <ul class="space-y-2 text-xs text-gray-300 font-sans">
+                        <li><a href="home.html" class="hover:text-white transition-colors">Opini Tokoh</a></li>
+                        <li><a href="home.html" class="hover:text-white transition-colors">Lingkungan & Sains</a></li>
+                        <li><a href="home.html" class="hover:text-white transition-colors">Pendidikan & Sosial</a></li>
+                        <li><a href="home.html" class="hover:text-white transition-colors">Indeks Arsip Berita</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-mono text-xs uppercase tracking-widest text-editorial-accent mb-4">Kantor Redaksi</h4>
+                    <p class="text-xs text-gray-400 font-sans leading-relaxed">
+                        Gedung Pers Kabar Kita, Jl. Jend. Sudirman No. 45, Jakarta Pusat 10220.<br>
+                        Email: redaksi@kabarkita.id<br>
+                        Telp: (021) 555-0192
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 font-mono gap-4">
+                <span>© 2026 PT Kabar Kita Media Indonesia. Hak Cipta Dilindungi Undang-Undang.</span>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Pedoman Media Siber</a>
+                    <a href="#" class="hover:text-white transition-colors">Kode Etik Jurnalistik</a>
+                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showNotification(message) {
+            const toast = document.getElementById('notification-toast');
+            const textEl = document.getElementById('notification-text');
+            textEl.textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = new Date('2026-10-13').toLocaleDateString('id-ID', options);
+    </script>
+</body>
+</html>
